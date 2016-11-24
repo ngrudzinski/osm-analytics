@@ -73,6 +73,29 @@
         }
       }
 
+      &.waterways {
+        background-color: #c89ab7;
+        border-color: #c89ab7;
+
+        &.feature {
+          background-color: transparent;
+          border-style: solid;
+          border-width: 2px;
+          border-top-width: 0;
+          border-left-width: 0;
+          transform: translateX(-2px) rotate(-20deg);
+        }
+        &.high {
+          opacity: 1.0;
+        }
+        &.mid {
+          opacity: 0.55;
+        }
+        &.low {
+          opacity: 0.1;
+        }
+      }
+
       &.pois {
         background-color: #FF0000;
 

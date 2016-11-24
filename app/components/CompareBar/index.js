@@ -31,11 +31,11 @@ class CompareBar extends Component {
           return (<li key={filter} title={filterOptions.find(f => f.id === filter).altText}>
             <span className="number">{
               numberWithCommas(
-                (filter === 'highways' ? unitSystems[this.props.stats.unitSystem].distance.convert : x=>x)(
+                (filter === 'highways' || filter === 'waterways' ? unitSystems[this.props.stats.unitSystem].distance.convert : x=>x)(
                   (this.state.featureCounts[filter].find(counts => counts && counts.id === this.props.map.times[0]) || {}).value
               ))
             }</span><br/>
-            {filter === 'highways'
+            {filter === 'highways' || filter === 'waterways'
             ? <UnitSelector
                 unitSystem={this.props.stats.unitSystem}
                 unit='distance'
@@ -52,11 +52,11 @@ class CompareBar extends Component {
           return (<li key={filter} title={filterOptions.find(f => f.id === filter).altText}>
             <span className="number">{
               numberWithCommas(
-                (filter === 'highways' ? unitSystems[this.props.stats.unitSystem].distance.convert : x=>x)(
+                (filter === 'highways' || filter === 'waterways' ? unitSystems[this.props.stats.unitSystem].distance.convert : x=>x)(
                   (this.state.featureCounts[filter].find(counts => counts && counts.id === this.props.map.times[1]) || {}).value
               ))
             }</span><br/>
-            {filter === 'highways'
+            {filter === 'highways' || filter === 'waterways'
             ? <UnitSelector
                 unitSystem={this.props.stats.unitSystem}
                 unit='distance'
@@ -110,7 +110,7 @@ class CompareBar extends Component {
               featureCounts[filter][timeIdx] = {
                 id: timeOption.id,
                 day: +timeOption.timestamp,
-                value: filter === 'highways'
+                value: filter === 'highways' || filter === 'waterways'
                   ? data.features.reduce((prev, feature) => prev + (feature.properties._length || 0.0), 0.0)
                   : data.features.reduce((prev, feature) => prev + (feature.properties._count || 1), 0)
               }
