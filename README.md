@@ -85,7 +85,7 @@ see also
 --------
 
 * [lukasmartinelli/osm-activity](https://github.com/lukasmartinelli/osm-activity) – similar to OSM-Analytics, but with a simpler, more basic user interface
-* [OSMatrix](http://wiki.openstreetmap.org/wiki/OSMatrix) by GIScience Heidelberg – "precursor" of OSM-Analytics, currently offline(?)
+* [OSMatrix](http://wiki.openstreetmap.org/wiki/OSMatrix) by GIScience Heidelberg – "precursor" of OSM-Analytics
 * [joto/taginfo](https://github.com/joto/taginfo) – aggregate statistics for all OSM tags
 * [tyrasd/taghistory](https://github.com/tyrasd/taghistory) – tagging history for all OSM tags
 * [Crowdlens](http://stateofthemap.us/2016/learning-about-the-crowd/) by Sterling Quinn – prototype of interactive mapping history visualization
