@@ -10,7 +10,7 @@ Say, you'd like to know when most of a specific feature type (e.g. buildings) in
 Features
 --------
 
-* supported feature types: *buildings* (any closed osm way with a building tag), *roads* (any osm way with a highway tag)
+* supported feature types: *buildings* (any closed osm way with a building tag), *roads* (any osm way with a highway tag), *rivers* (any osm way with a waterway tag)
 * graphs of feature *recency* or *mapper experience*
 * highlighting of features by custom date range or user experience interval
 * calculated statistics: total number/length of features in selected region and date/experience range, number of contributors

@@ -114,14 +114,14 @@ class Stats extends Component {
         {features.map(filter => {
           return (<li key={filter.filter} title={filters.find(f => f.id === filter.filter).altText}>
             <span className="number">{
-              numberWithCommas(Number((filter.filter === 'highways'
+              numberWithCommas(Number((filter.filter === 'highways' || filter.filter === 'waterways'
                 ? unitSystems[this.props.stats.unitSystem].distance.convert(
                   filter.highlightedFeatures.reduce((prev, feature) => prev+(feature.properties._length || 0.0), 0.0)
                 )
                 : filter.highlightedFeatures.reduce((prev, feature) => prev+(feature.properties._count || 1), 0))
               ).toFixed(0))
             }</span><br/>
-            {filter.filter === 'highways'
+            {filter.filter === 'highways' || filter.filter === 'waterways'
             ? <UnitSelector
                 unitSystem={this.props.stats.unitSystem}
                 unit='distance'

@@ -1,5 +1,6 @@
 import buildings from './buildings.json'
 import highways from './highways.json'
+import waterways from './waterways.json'
 import pois from './pois.json'
 
 import settings from '../../../settings/settings'
@@ -13,6 +14,7 @@ export default function getStyle(filters, options) {
   const filterStyles = {
     buildings,
     highways,
+    waterways,
     pois
   }
   var allSources = {}
@@ -56,7 +58,8 @@ export default function getStyle(filters, options) {
       })
   }
   buildings,
-  highways
+  highways,
+  waterways
 }
 
 export function getCompareStyles(filters, compareTimes) {
