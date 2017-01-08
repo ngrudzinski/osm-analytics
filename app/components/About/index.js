@@ -8,6 +8,7 @@ import logo_mapbox   from '../../assets/logos/mapbox.png'
 import logo_redcross from '../../assets/logos/redcross.png'
 import logo_gfdrr    from '../../assets/logos/gfdrr.png'
 import logo_aws      from '../../assets/logos/aws.png'
+import logo_zoondka  from '../../assets/logos/zoondka.png'
 import logo_ds       from '../../assets/logos/ds.png'
 import logo_knight   from '../../assets/logos/knight.png'
 
@@ -52,6 +53,7 @@ class About extends Component {
         <a href="http://www.redcross.org/"><img src={logo_redcross} /></a>
         <a href="https://www.gfdrr.org/"><img src={logo_gfdrr} style={{height:'50px'}} /></a>
         <a href="http://aws.amazon.com/what-is-cloud-computing"><img src={logo_aws} /></a>
+        <a href="http://zoondka.com/"><img src={logo_zoondka} style={{height:'50px'}} /></a>
         <a href="https://developmentseed.org/"><img src={logo_ds} style={{height:'50px'}} /></a>
         <a href="http://www.knightfoundation.org/"><img src={logo_knight} /></a>
       </footer>
